@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiEmpresas.Services", "ApiEmpresas.Services\ApiEmpresas.Services.csproj", "{5B701FB3-3AAD-4C85-92A6-601CEADF458D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiEmpresas.Services", "ApiEmpresas.Services\ApiEmpresas.Services.csproj", "{5B701FB3-3AAD-4C85-92A6-601CEADF458D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services Layer", "1 - Services Layer", "{C75BDAEF-5955-428B-A38D-F6F6ACE6B71E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infrastructure Layer", "2 - Infrastructure Layer", "{C1D616C2-AE45-40C0-87A9-9D7712645644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiEmpresas.Infra.Data", "ApiEmpresas.Infra.Data\ApiEmpresas.Infra.Data.csproj", "{1102F404-DD4F-4F54-9A13-EC0234138749}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,17 @@ Global
 		{5B701FB3-3AAD-4C85-92A6-601CEADF458D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B701FB3-3AAD-4C85-92A6-601CEADF458D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B701FB3-3AAD-4C85-92A6-601CEADF458D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1102F404-DD4F-4F54-9A13-EC0234138749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1102F404-DD4F-4F54-9A13-EC0234138749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1102F404-DD4F-4F54-9A13-EC0234138749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1102F404-DD4F-4F54-9A13-EC0234138749}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5B701FB3-3AAD-4C85-92A6-601CEADF458D} = {C75BDAEF-5955-428B-A38D-F6F6ACE6B71E}
+		{1102F404-DD4F-4F54-9A13-EC0234138749} = {C1D616C2-AE45-40C0-87A9-9D7712645644}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9942A57C-2035-48C6-B2CC-CFCD7F6ED832}
