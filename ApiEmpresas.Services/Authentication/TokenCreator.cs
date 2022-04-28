@@ -28,7 +28,7 @@ namespace ApiEmpresas.Services.Authentication
             var descriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[] { new Claim(ClaimTypes.Name, login) }),
-                Expires = DateTime.Now.AddHours(_tokenSettings.ExpirationInHours),
+                Expires = DateTime.UtcNow.AddHours(_tokenSettings.ExpirationInHours),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key),
                     SecurityAlgorithms.HmacSha256Signature)
             };
